@@ -7,8 +7,8 @@
         @search="handleSearch"
         @filter="handleFilter"
       />
-      <div v-if="loading" class="flex justify-center py-20">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-pink-500"></div>
+      <div v-if="loading" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+        <ProductSkeleton v-for="n in 8" :key="n" />
       </div>
       <div v-else class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
         <ProductCard
@@ -28,6 +28,7 @@ import type { Product, Category } from '../types'
 import NavBar from '../components/NavBar.vue'
 import ProductCard from '../components/ProductCard.vue'
 import FilterBar from '../components/FilterBar.vue'
+import ProductSkeleton from '../components/ProductSkeleton.vue'
 
 const products = ref<Product[]>([])
 const categories = ref<Category[]>([])
