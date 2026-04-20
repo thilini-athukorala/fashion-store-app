@@ -34,19 +34,26 @@
         </button>
       </div>
     </div>
+
+    <Toast :show="showToast" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useCartStore } from '../stores/useCartStore'
 import type { Product } from '../types'
+import Toast from './Toast.vue'
 
 const props = defineProps<{ product: Product }>()
 const router = useRouter()
 const cart = useCartStore()
+const showToast = ref(false)
 
 function addToCart() {
   cart.addToCart(props.product)
+  showToast.value = true
+  setTimeout(() => { showToast.value = false }, 2000)
 }
 </script>
