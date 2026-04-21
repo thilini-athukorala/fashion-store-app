@@ -1,9 +1,12 @@
 <template>
   <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <router-link to="/" class="text-2xl font-bold text-pink-500">
-        👗 FashionStore
-      </router-link>
+     <router-link to="/" class="flex items-center gap-1">
+  <span class="text-3xl drop-shadow-md">✨</span>
+  <span class="text-2xl font-extrabold bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent tracking-tight">
+    Fashion Store
+  </span>
+</router-link>
 
       <div class="flex items-center gap-4">
         <button
