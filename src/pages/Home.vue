@@ -3,41 +3,42 @@
     <NavBar />
 
     <!-- Hero Section -->
-    <div class="relative overflow-hidden bg-gray-100 dark:bg-gray-800">
+    <div class="relative overflow-hidden bg-pink-50 dark:bg-gray-800">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row items-center">
 
           <!-- Left Text -->
           <div class="flex-1 text-left py-16 px-8 z-10">
-            <p class="text-pink-500 font-semibold text-lg mb-2 italic">Summer Sale</p>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
-              COLLECTIONS
-            </h1>
-            <p class="text-2xl font-bold text-gray-600 dark:text-gray-300 mb-8">
-              UPTO 65% OFF
-            </p>
-            <div class="flex gap-4">
-              <button
-                @click="scrollToProducts"
-                class="bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 py-3 rounded transition"
-              >
-                Shop Now
-              </button>
-              <button
-                @click="scrollToProducts"
-                class="border-2 border-pink-500 text-pink-500 hover:bg-pink-50 dark:hover:bg-gray-700 font-bold px-8 py-3 rounded transition"
-              >
-                Read More
-              </button>
-            </div>
-          </div>
+  <p class="text-pink-500 font-semibold text-lg mb-2 tracking-widest uppercase">New Arrivals 2026</p>
+  <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-3">
+    Discover Your <br/>
+    <span class="text-pink-500">Style</span>
+  </h1>
+  <p class="text-lg text-gray-500 dark:text-gray-300 mb-8">
+    Explore the latest trends in fashion.<br/> Free shipping on orders over $50.
+  </p>
+  <div class="flex gap-4">
+    <button
+      @click="scrollToProducts"
+      class="bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 py-3 rounded-full transition shadow-md"
+    >
+      Shop Now
+    </button>
+    <button
+      @click="scrollToProducts"
+      class="border-2 border-pink-500 text-pink-500 hover:bg-pink-50 dark:hover:bg-gray-700 font-bold px-8 py-3 rounded-full transition"
+    >
+      Explore
+    </button>
+  </div>
+</div>
 
           <!-- Right Image -->
           <div class="flex-1 flex justify-end">
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+              src="/fashion.jpg.jpg"
               alt="Fashion Model"
-              class="w-full max-w-lg object-cover h-96 md:h-auto"
+             class="w-full max-w-4xl object-cover h-[500px] md:h-[600px]"
             />
           </div>
 
