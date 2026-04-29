@@ -1,7 +1,9 @@
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
     <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 w-full max-w-md">
-      <h1 class="text-3xl font-bold text-center mb-2 dark:text-white">👗 Fashion Store</h1>
+      <h1 class="text-center mb-2">
+  <span class="text-3xl font-light tracking-[0.3em] uppercase text-gray-800 dark:text-white">FASHION</span><span class="text-3xl font-black tracking-[0.3em] uppercase text-pink-500">STORE</span>
+</h1>
       <p class="text-center text-gray-400 mb-8">Sign in to your account</p>
 
       <div v-if="error" class="bg-red-100 text-red-600 rounded-xl p-3 mb-4 text-sm">
@@ -16,7 +18,7 @@
           <input
             v-model="username"
             type="text"
-            placeholder="Try: emilys"
+            placeholder=""
             class="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400"
           />
         </div>
@@ -28,7 +30,7 @@
           <input
             v-model="password"
             type="password"
-            placeholder="Try: emilyspass"
+            placeholder=""
             class="w-full border border-gray-200 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-400"
           />
         </div>

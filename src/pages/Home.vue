@@ -24,12 +24,7 @@
     >
       Shop Now
     </button>
-    <button
-      @click="scrollToProducts"
-      class="border-2 border-pink-500 text-pink-500 hover:bg-pink-50 dark:hover:bg-gray-700 font-bold px-8 py-3 rounded-full transition"
-    >
-      Explore
-    </button>
+    
   </div>
 </div>
 
@@ -67,6 +62,7 @@
         />
       </div>
     </main>
+     <Footer />
   </div>
 </template>
 
@@ -78,6 +74,7 @@ import NavBar from '../components/NavBar.vue'
 import ProductCard from '../components/ProductCard.vue'
 import FilterBar from '../components/FilterBar.vue'
 import ProductSkeleton from '../components/ProductSkeleton.vue'
+import Footer from '../components/Footer.vue'
 
 const products = ref<Product[]>([])
 const categories = ref<Category[]>([])
